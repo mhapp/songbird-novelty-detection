@@ -1,0 +1,1 @@
+function dT1 = updateD_v2(dT, yT)%%%%%% update D for current timestep based on previous yT and dT%%%%%    m = length(yT);    dT1 = zeros(m,1);%     for idx = 1:m    dT1 = dT + yT.^2;%     endend

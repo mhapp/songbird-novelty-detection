@@ -1,0 +1,1 @@
+function cdWeight_plotter_v2(cdNet, ts_idx, plotInd, figNumber)wX = cdNet.w_CD_CD;% [~, sortind] = sortrows(wX);wplot = wX(plotInd,plotInd); % from early (top) to late (bottom)figure(figNumber);imagesc(flipud(wplot))title(['CD Weights - ' num2str(ts_idx)])xlabel('CD Cell 1')ylabel('CD Cell 2')colorbar;% pause
